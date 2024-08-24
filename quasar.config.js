@@ -202,3 +202,12 @@ module.exports = configure(function (/* ctx */) {
     }
   }
 });
+
+build: {
+  extendWebpack (cfg) {
+    cfg.resolve.alias = {
+      ...cfg.resolve.alias,
+      '@android-studio': 'D:\kuye\Android Studio\bin\studio64.exe'
+    }
+  }
+}
